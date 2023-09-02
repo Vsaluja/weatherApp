@@ -25,7 +25,7 @@ const partialsPath = path.join(__dirname, "../templates/partials")
 hbs.registerPartials(partialsPath);
 
 app.get("/", (req, res)=>{
-    res.render("home");
+    res.render("index");
 })
 app.get("/about", (req, res)=>{
     res.render("about")
