@@ -1,0 +1,161 @@
+@media(min-width: 900px) and (max-width: 1460px) {
+
+    /* Home */
+
+    /* Weather Page */
+    #form{
+        width: 70%;
+    }
+
+    .output-container{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    /* About page */
+    
+    .right-about-container h1{
+        font-size: 7rem;
+    }
+    
+}
+@media(min-width: 600px) and (max-width: 900px) {
+    
+    /* Home */
+    .main_header_left{
+        height: 40rem;
+    }
+    .main_header_right{
+        height: 40rem;
+    }
+    .main_header_right img{
+        max-height: 38rem;
+    }
+
+
+
+
+    /* Weather */
+    #form{
+        width: 85%;
+    }
+
+    .output-container{
+        margin: 5rem 0;
+    }
+
+    /* About */
+    .right-about-container h1{
+        font-size: 3rem;
+    }
+
+    .inner-about i{
+        font-size: 2.5rem;
+    }
+
+    .inner-about h2{
+        
+        font-size: 2.5rem;
+    }
+
+}
+@media(min-width: 400px) and (max-width: 600px) {
+    
+    /* Home */
+
+    .main_header_left{
+        height: 30rem;
+    }
+    .main_header_right{
+        height: 30rem;
+    }
+    .main_header_right img{
+        max-height: 28rem;
+    }
+
+
+    /* weather */
+    #form{
+        width: 100%;
+    }
+
+    .output-container{
+        margin: 5rem 0;
+    }
+
+    /* About */
+    .right-about-container h1{
+        font-size: 3rem;
+    }
+
+    .inner-about i{
+        font-size: 1.5rem;
+    }
+
+    .inner-about h2{
+        
+        font-size: 1.5rem;
+    }
+
+}
+@media(min-width: 250px) and (max-width: 400px) {
+    
+    /* Home */
+
+    .main_header_left{
+        height: 30rem;
+    }
+    .main_header_right{
+        height: 30rem;
+    }
+    .main_header_right img{
+        max-height: 28rem;
+    }
+
+
+    /* weather */
+    #form{
+        width: 115%;
+    }
+
+    #input{
+        width: 14rem;
+    }
+
+    .output .city{
+        font-size: 3rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .output .temp-status{
+        font-size: 3rem;
+    }
+
+    .output .temp{
+        font-size: 3rem;
+    }
+
+   /* About */
+
+    .left-about-container{
+        margin: 2rem;
+    }
+    .right-about-container{
+        margin: 2rem;
+    }
+
+    .right-about-container h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .inner-about i{
+        font-size: 1rem;
+    }
+
+    .inner-about h2{
+        
+        font-size: 1rem;
+    }
+
+}

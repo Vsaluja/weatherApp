@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main-bg: #14232e;
+    --main-color: #0097e6;
+}
+
+html {
+    /* This will make the page response for texts now 1rem=10px */
+    font-size: 62.5%;
+}
+
+.row {
+    margin: 0;
+}
+
+/* Navbar */
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+/* Remove the default classes from navbar like navbar-light bg-light to implement this color*/
+.navbar {
+    background-color: var(--main-bg);
+    color: white;
+    padding: 2rem 0;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: rgb(83, 192, 243);
+    transition: 0.4s;
+}
+
+.navbar-toggler {
+    /* background-color:  */
+    color: white;
+    font-size: 5vw;
+}
+
+.navbar .navbar-brand {
+    font-size: 2.3rem;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 1.2rem;
+}
+
+/* Main body/header */
+
+.main_header_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55rem;
+    /* 70 rem = 700px because we set html tag to font size 62.5% */
+}
+
+.main_header_left p {
+    font-size: 1.8rem;
+}
+
+.main_header_left h2 {
+    font-size: 2rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.main_header_left a button {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(83, 192, 243);
+    border: 1px solid rgb(83, 192, 243);
+    box-shadow: 0.5px 0.5px 6px black;
+}
+
+.main_header_left a button:hover {
+    background-color: rgb(25, 152, 211);
+    border: 1px solid transparent;
+}
+
+.text-clr {
+    color: rgb(83, 192, 243);
+    ;
+}
+
+
+.main_header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55rem;
+    /* 70 rem = 700px because we set html tag to font size 62.5% */
+}
+
+.main_header_right img{
+    max-height: 50rem;
+}
+
+
+/* Footer */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+footer {
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 6rem;
+    position: sticky;
+    top: 100vh;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    line-height: 6rem;
+    font-weight: bold;
+}
+
+/* Weather Page */
+
+.weather-container {
+    margin-top: 15rem;
+}
+
+.col-lg-8 {
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: rgb(19, 36, 51);
+    padding: 5px;
+}
+
+#input {
+    color: white;
+    background-color: rgb(19, 36, 51);
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 50rem;
+}
+
+#input::placeholder {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#submit {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-color: rgb(83, 192, 243);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.output-container{
+    margin: 10rem 0;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #14232e;
+    padding: 1rem 1rem;
+    background-color: #132e41;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.output .city {
+    font-size: 4rem;
+    color: rgb(83, 192, 243);
+    text-transform: uppercase;
+    padding: 0.5rem 3rem;
+}
+
+.inner{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output .temp-status{
+    font-size: 5rem;
+    margin-left: 2rem;
+
+}
+
+.output .temp{
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Piazzolla", serif;
+    font-weight: bold;
+}
+
+/* About page */
+
+.about-container{
+    margin-bottom: 5rem;
+}
+
+.left-about-container{
+    margin: 5rem;
+}
+
+.left-about-container img{
+    max-height: 60rem;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+.right-about-container{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-about-container h1{
+    font-size: 10rem;
+    color: #132e41;
+    text-align: center;
+    width: 100%;
+}
+
+.inner-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-about i{
+    font-size: 4rem;
+    margin: 2rem;
+    /* width: 100%; */
+}
+
+.inner-about h2{
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+}
