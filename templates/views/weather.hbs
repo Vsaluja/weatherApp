@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    {{>cssTag}}
+
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <div class="container-fluid">
+        <div class="row weather-container justify-content-center">
+            <div class="col-10 weather-col">
+                <form id="weather-form">
+                    <input type="text" id="weather-input" placeholder="Enter the city name">
+                    <input type="submit" id="weather-submit" value="Search">
+                </form>
+            </div>
+        </div>
+
+        <div class="row output-container">
+            <div class="col-10 output">
+                <div class="box">
+                    <h2 class="city">Delhi, IN</h2>
+                    <div class="inner">
+                        <span class="temp">19C</span>
+                        <span class="temp-status"><i class="fa-solid fa-cloud" style="color: #d6d6d6;"></i></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    {{>footer}}
+    {{>jsTag}}
+</body>
+
+</html>
